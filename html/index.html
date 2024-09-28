@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Unifesspa - Coleta Seletiva</title>
+    <script src="https://kit.fontawesome.com/0170ac469d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <a href="/html/index.html">Home</a>
+    </header>
+
+    <main>
+        <div id="conteudo-principal">
+            <h1 style="color: #78bf3a;">Veja os pontos importantes para enviar seu lixo selecionado</h1>
+            <div>
+                <div class="cards-sucatarias">
+                    <h2>Veja as sucatarias!</h2>
+                    
+                    <a href="/html/lista-sucatarias.html" style="color: white;align-self: center;">
+                        <button>
+                                <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </a>
+                </div>
+                <img src="../static/resized_105fe2438d324cf_1608663949_953x.jpg" alt="coleta-seletiva">
+            </div>
+        </div>
+        
+        <div id="conteudo-secundario">
+
+            <h2>Deixe seu lixo no local certo!</h2>
+            <p>Entenda onde colocar cada tipo de lixo com nossas lixeiras interativas</p>
+            
+            <div>
+                <div class="card-lixeira" >
+                    <h3>Lixeira Azul</h3>
+                    <p>Papel e Papelão</p>
+                    <img decoding="async" src="https://th.bing.com/th/id/OIP.3MNUM8reU5HgUywk0UmangHaHa?rs=1&pid=ImgDetMain" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>1. Lixeira Azul: Papel e Papelão</h2>
+                        <img decoding="async" src="https://th.bing.com/th/id/OIP.3MNUM8reU5HgUywk0UmangHaHa?rs=1&pid=ImgDetMain" alt="sucataria">
+                        <div class="list-group">
+                            <h3>Podem:</h3>
+                        <ul>
+                            <li>Jornais</li>
+                            <li>Revistas</li>
+                            <li>Embalagens de papelão</li>
+                            <li>Cartões</li>
+                            <li>Papel branco</li>
+                            <li>Envelopes</li>
+                            <li>Cadernos</li>
+                            <li>Livros</li>
+                        </ul>
+
+                        <h3>Não podem:</h3>
+                        <ul>
+                            <li>Fraldas</li>
+                            <li>Papel higiênico</li>
+                            <li>Guardanapos</li>
+                            <li>Cartões</li>
+                            <li>Papel laminado ou plastificado</li>
+                            <li>Fotografias</li>
+                        </ul>
+                        </div>
+
+                        <p><b>Dica:</b> Retire grampos, clipes e outros objetos metálicos antes de descartar.</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira">
+                    <h3>Lixeira Vermelha</h3>
+                    <p>Plástico</p>
+                    <img decoding="async" src="https://th.bing.com/th/id/OIP.AelaMC5_8ZpSSuDEPKulnwAAAA?rs=1&pid=ImgDetMain" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>2. Lixeira Vermelha: Plástico</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira">
+                    <h3>Lixeira Verde</h3>
+                    <p>Vidro</p>
+                    <img decoding="async" src="https://cdn.leroymerlin.com.br/products/lixeira_individual_para_coleta_seletiva_50_litros__verde_1567527322_1439_300x300.jpg" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>3. Lixeira Verde: Vidro</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira" >
+                    <h3>Lixeira Amarela</h3>
+                    <p>Metal</p>
+                    <img decoding="async" src="https://th.bing.com/th/id/R.4ba5e11a1953c0bd59aa143b40d92514?rik=%2bJD7F2TXunfnjg&pid=ImgRaw&r=0" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>4. Lixeira Amarela: Metal</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira">
+                    <h3>Lixeira Laranja</h3>
+                    <p>Pilhas e Baterias</p>
+                    <img decoding="async" src="https://cdn.leroymerlin.com.br/products/lixeira_individual_para_coleta_seletiva_50_litros__laranja_1567527320_b933_300x300.jpg" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>5. Lixeira Laranja: Pilhas e Baterias</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira">
+                    <h3>Lixeira Brancs</h3>
+                    <p> Resíduos Hospitalare</p>
+                    <img decoding="async" src="https://th.bing.com/th/id/R.22de630c64f0a6e8d77d75e548fafdc9?rik=DiTZ9kYt1PJG5A&pid=ImgRaw&r=0" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>Lixeira Branca: Resíduos Hospitalares</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira" >
+                    <h3>Lixeira Preta</h3>
+                    <p>Madeira</p>
+                    <img decoding="async" src="https://th.bing.com/th/id/OIP.iAio8A5aVOOUvjGiyAZRgwAAAA?rs=1&pid=ImgDetMain" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>Title</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira">
+                    <h3>Lixeira Roxa</h3>
+                    <p>Resíduos Radioativos</p>
+                    <img decoding="async" src="https://st4.depositphotos.com/16940446/26134/v/450/depositphotos_261348014-stock-illustration-bin-recycle-plastic-purple-wheelie.jpg" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>Title 2</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira">
+                    <h3>Lixeira Marrom</h3>
+                    <p>Orgânico</p>
+                    <img decoding="async" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mWHCSk2VXlQEGQ2Ru1v9XKHRqlYhMrhdnw&s" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>Title 3</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+                <div class="card-lixeira">
+                    <h3>Lixeira Cinza</h3>
+                    <p>Resíduos Gerais Não Recicláveis</p>
+                    <img decoding="async" src="https://cdn.leroymerlin.com.br/products/lixeira_individual_jsn_para_coleta_seletiva_com_50l_cinza_1567527324_ee0a_300x300.jpg" alt="sucataria">
+                    <button onclick="openPopup(this)">Ver mais</button>
+                    <dialog>
+                        <h2>Title 3</h2>
+                        <img decoding="async" src="../static/IMG-20240325-WA0003.jpg" alt="sucataria">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam sapiente nisi vitae quod id aliquid consequatur placeat ex labore vel repellat aut officia recusandae natus, quisquam incidunt eum deleniti!</p>
+
+                        <button onclick="closePopup()">Entendi!</button>
+                    </dialog>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="../static/Marca-Vertical-Smbolo-Tipografia-preta001.png" alt="logo-unifesspa">
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+
+</body>
+</html>

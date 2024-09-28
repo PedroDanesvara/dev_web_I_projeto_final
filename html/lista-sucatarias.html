@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Unifesspa - Coleta Seletiva</title>
+    <script src="https://kit.fontawesome.com/0170ac469d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <a href="/html/index.html">Home</a>
+    </header>
+
+    <main>
+        <div id="conteudo-principal">
+            <h2>Cadastre sua sucataria!</h2>
+            <div>
+                <form>
+                    <label for="nome-sucataria">Nome: </label>
+                    <input type="text" name="nome-sucataria" id="nome-sucataria" placeholder="Nome da sucataria" required>
+                    <label for="local-sucataria">Local: </label>
+                    <input type="text" name="local-sucataria" id="local-sucataria" placeholder="Local da sucataria" required>
+                    <button id="enviar" onclick="criarSucataria()" class="btn-primary">enviar</button>
+                </form>
+            </div>
+            <div id="lista-sucatarias">
+                <div class="sucataria">
+                    <div>
+                        <h3 id="nome-sucataria-0">Nome sucataria</h3>
+                        <p id="local-sucataria-0">Local sucataria</p>
+                    </div>
+                    <div>
+                        <button class="btn-primary" onclick="openPopup(this)">editar</button>
+                        <button class="btn-primary" onclick="deleteSucataria(0)">excluir</button>
+                        <dialog class="sucataria-modal">
+                            <h2>Title 3</h2>
+                            <input type="text" name="nome-sucataria" id="novo-nome-sucataria" placeholder="Nome da sucataria">
+                            <button id="enviar" onclick="updateSucataria(0)" class="btn-primary">enviar</button>
+                            <button onclick="closePopup()" class="btn-primary">Cancelar</button>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="../static/Marca-Vertical-Smbolo-Tipografia-preta001.png" alt="logo-unifesspa">
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        window.onload = atualizaLista()
+    </script>
+
+</body>
+</html> 
